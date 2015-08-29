@@ -16,7 +16,7 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&sensor=false"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -25,7 +25,7 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/directives.js"></script>
-    <script src="js/geolocationGPS.js"></script>
+
 
 
   </head>
@@ -36,7 +36,7 @@
     </ion-header-bar>
 
     <ion-content scroll="false">
-      <map on-create="mapCreated(map)"></map>
+      <div id="map"> </div>
     </ion-content>
 
     <ion-footer-bar class="bar-stable">
